@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🔒 Report a security vulnerability (private)
+    url: https://github.com/ali-zohrevand/claude-sentinel/security/advisories/new
+    about: Report vulnerabilities in the plugin privately — never as a public issue (see SECURITY.md).
+  - name: Question / discussion
+    url: https://github.com/ali-zohrevand/claude-sentinel/discussions
+    about: Ask questions or share ideas.

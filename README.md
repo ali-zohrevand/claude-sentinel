@@ -211,6 +211,10 @@ Validate before pushing: `claude plugin validate ~/projects/claude-sentinel`. In
 
 ---
 
+## Contributing
+
+Contributions welcome — new checks, scanner integrations, sharper personas, docs. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for setup, the non-negotiable safety rules, and the PR flow, plus the **[Code of Conduct](CODE_OF_CONDUCT.md)**. Report a vulnerability in the plugin privately via **[SECURITY.md](SECURITY.md)** — never as a public issue. Bugs and ideas → open an issue (templates provided).
+
 ## License
 
-MIT. Use only against systems you own or are authorized to test.
+[MIT](LICENSE) © ali zohrevand. Use only against systems you own or are authorized to test.

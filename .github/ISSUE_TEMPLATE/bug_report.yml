@@ -1,0 +1,44 @@
+name: Bug report
+description: A sentinel command/persona/scanner doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "⚠️ Do NOT report a security vulnerability here — use a private advisory (see SECURITY.md)."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      placeholder: e.g. /sentinel:project didn't run gitleaks even though it's installed
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Command: /sentinel:...
+        2. Stack/target: ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      description: From `claude plugin list` (e.g. sentinel 0.2.0)
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Claude Code version, OS, and (if relevant) which scanners are installed
+    validations:
+      required: false
