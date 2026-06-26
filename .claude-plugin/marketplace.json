@@ -1,18 +1,26 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-sentinel",
   "metadata": {
     "description": "Personal marketplace hosting the sentinel security plugin.",
     "version": "0.2.0"
   },
   "owner": {
-    "name": "ali zohrevand"
+    "name": "ali zohrevand",
+    "url": "https://github.com/ali-zohrevand"
   },
   "plugins": [
     {
       "name": "sentinel",
-      "description": "Comprehensive AI security review toolkit: 5 personas, 6 scopes, browser-driven DAST behind an authorization gate.",
+      "description": "Comprehensive AI security toolkit: 6 expert personas across 8 scopes (diff, project, STRIDE, url, whole-site DAST, api, apis, NL router). Covers OWASP/API/LLM Top 10, CEH, secrets, dependency CVEs + SBOM, with browser-driven AI DAST behind a hard authorization gate.",
       "source": "./",
-      "category": "security"
+      "category": "security",
+      "author": {
+        "name": "ali zohrevand",
+        "url": "https://github.com/ali-zohrevand"
+      },
+      "homepage": "https://github.com/ali-zohrevand/claude-sentinel",
+      "tags": ["security", "appsec", "devsecops", "owasp", "dast", "sast", "pentest", "ai"]
     }
   ]
 }
