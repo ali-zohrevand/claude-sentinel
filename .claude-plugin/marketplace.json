@@ -1,0 +1,18 @@
+{
+  "name": "claude-sentinel",
+  "metadata": {
+    "description": "Personal marketplace hosting the sentinel security plugin.",
+    "version": "0.1.0"
+  },
+  "owner": {
+    "name": "ali zohrevand"
+  },
+  "plugins": [
+    {
+      "name": "sentinel",
+      "description": "Comprehensive AI security review toolkit: 5 personas, 6 scopes, browser-driven DAST behind an authorization gate.",
+      "source": "./",
+      "category": "security"
+    }
+  ]
+}
