@@ -4,6 +4,17 @@
 
 > ⚠️ **Authorization required for live testing.** Active scanning of any host you don't own or lack written permission to test is illegal (CFAA / Computer Misuse Act). Every live/active probe blocks until you type an explicit per-host confirmation. Code-only scopes never touch the network.
 
+## Quick install
+
+```text
+/plugin marketplace add ali-zohrevand/claude-sentinel
+/plugin install sentinel@claude-sentinel
+```
+
+Then reload Claude Code (Command Palette → "Developer: Reload Window"). Optionally install the [scanners](#scanners) for full coverage. Full details in [Install](#install).
+
+> ⏳ **Coming to the Claude community directory.** Once approved, you'll also be able to install it directly: `/plugin marketplace add anthropics/claude-plugins-community` then `/plugin install sentinel@claude-community`.
+
 ---
 
 ## Table of contents
