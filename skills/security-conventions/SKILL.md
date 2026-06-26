@@ -33,11 +33,13 @@ Reuse the signals from `squad:stack-conventions` when that skill is installed (l
 
 ## 4. Topic files
 
-- [authorization.md](authorization.md) — the hard gate for any live/active probe (read before url/api/apis).
+- [authorization.md](authorization.md) — the hard gate for any live/active probe (read before url/api/apis/site).
 - [dast-browser.md](dast-browser.md) — Acunetix-style browser-driven AI DAST via the Playwright MCP + the active-test catalog.
+- [site-scan.md](site-scan.md) — whole-site deep crawl (sitemap/BFS/auth/dedup/caps + coverage map) for the `site` scope.
 - [scanners.md](scanners.md) — every CLI scanner: purpose, invocation, install guard.
 - [owasp.md](owasp.md) — OWASP Top 10 (2021/2025) + API Top 10 (2023) + LLM Top 10 (2025) checklists.
 - [ceh.md](ceh.md) — EC-Council methodology phases + attack-tree format.
+- [stride.md](stride.md) — STRIDE architectural threat modeling (DFD + trust boundaries + threat table).
 - [whitebox.md](whitebox.md) — source-review / SAST patterns per stack (injection, RCE, authz/IDOR, secrets, headers, JWT, AI prompt-injection, misconfig).
 - [api-testing.md](api-testing.md) — OpenAPI parsing, per-operation authz, token redaction, `postman:security` handoff.
 

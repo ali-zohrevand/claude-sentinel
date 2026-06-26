@@ -1,7 +1,7 @@
 {
   "name": "sentinel",
-  "description": "Comprehensive AI security toolkit for Claude Code: 5 expert personas (advisor, white-box, black-box browser-DAST, CEH, OWASP) across 6 scopes (uncommitted+unpushed diff, whole project, a URL, one API, all APIs, natural-language router). Covers OWASP Top 10 + API Top 10 + LLM Top 10, full CEH methodology, injection/RCE/misconfig, secrets, dependency CVEs + SBOM, auth/JWT/headers. Live targets use a Playwright-driven AI DAST behind a hard authorization gate.",
-  "version": "0.1.0",
+  "description": "Comprehensive AI security toolkit for Claude Code: 6 expert personas (advisor, white-box, black-box browser-DAST, CEH, OWASP, STRIDE threat-modeler) across 8 scopes (uncommitted+unpushed diff, whole project, a URL, whole website, one API, all APIs, STRIDE threat model, natural-language router). Covers OWASP Top 10 + API Top 10 + LLM Top 10, full CEH methodology, STRIDE, injection/RCE/misconfig, secrets, dependency CVEs + SBOM, auth/JWT/headers. Live targets use a Playwright-driven AI DAST (Acunetix-style whole-site crawl) behind a hard authorization gate.",
+  "version": "0.2.0",
   "author": {
     "name": "ali zohrevand"
   },

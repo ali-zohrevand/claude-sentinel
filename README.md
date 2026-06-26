@@ -19,7 +19,9 @@ Local dev: `/plugin marketplace add ~/projects/claude-sentinel` then install, or
 |---|---|---|
 | `/sentinel:diff [base]` | Uncommitted + unpushed changes (pre-push review) | no |
 | `/sentinel:project [subdir]` | Whole repo: all static personas + full scanner suite | no |
+| `/sentinel:stride [subsystem]` | STRIDE architectural threat model (DFD + trust boundaries) | no |
 | `/sentinel:url <url>` | Live URL — AI browser DAST + CLI DAST | **gated** |
+| `/sentinel:site <url>` | **Whole website** — deep-crawl + active-test every page (Acunetix-style) | **gated** |
 | `/sentinel:api <endpoint\|spec#op>` | One API: source review + optional live probe | gated if live |
 | `/sentinel:apis <openapi\|routes>` | All APIs: enumerate from source + optional live crawl | gated if live |
 | `/sentinel:audit <plain English>` | Natural-language router → picks the right scope | depends |
@@ -30,13 +32,14 @@ Local dev: `/plugin marketplace add ~/projects/claude-sentinel` then install, or
 
 - **security-advisor** — triage + consolidate all findings into one deduped, severity-ranked report.
 - **whitebox-checker** — SAST + manual data-flow (injection, RCE, IDOR, auth/JWT, crypto, secrets, dep CVEs, headers, AI prompt-injection). No network.
-- **blackbox-dast** — browser-driven AI DAST (Playwright) + nuclei/ZAP/sqlmap/nikto. Gated.
+- **blackbox-dast** — browser-driven AI DAST (Playwright) + nuclei/ZAP/sqlmap/nikto. Gated. Powers `/sentinel:url` and the whole-site `/sentinel:site`.
 - **ceh-reviewer** — EC-Council 5-phase methodology + attack-tree kill-chains.
 - **owasp-reviewer** — OWASP Top 10 + API Top 10 + LLM Top 10 tagging + compliance table.
+- **threat-modeler** — STRIDE architectural threat model: data-flow diagram + trust boundaries + threat table. Design-level, no network.
 
 ## Coverage
 
-OWASP Top 10 (2021/2025), OWASP API Top 10 (2023), OWASP LLM/GenAI Top 10 (2025); full CEH methodology; injection / RCE / command execution / SSRF / deserialization; broken access control & IDOR/BOLA; auth, session & JWT; crypto failures; security misconfiguration & headers; secrets (code + git history); dependency CVEs + SBOM; and AI/LLM prompt-injection & excessive agency.
+OWASP Top 10 (2021/2025), OWASP API Top 10 (2023), OWASP LLM/GenAI Top 10 (2025); full CEH methodology; **STRIDE** architectural threat modeling; injection / RCE / command execution / SSRF / deserialization; broken access control & IDOR/BOLA; auth, session & JWT; crypto failures; security misconfiguration & headers; secrets (code + git history); dependency CVEs + SBOM; and AI/LLM prompt-injection & excessive agency.
 
 **Scanners** (run when installed, otherwise reported with their install command — never silently skipped): semgrep, gosec, bandit · gitleaks, trufflehog · npm/composer/pip-audit, govulncheck, osv-scanner, syft, grype · nuclei, OWASP ZAP, sqlmap, nikto, testssl.sh · trivy, checkov, tfsec, hadolint.
 
@@ -58,10 +61,10 @@ OWASP Top 10 (2021/2025), OWASP API Top 10 (2023), OWASP LLM/GenAI Top 10 (2025)
 
 ## Layout
 
-```
+```text
 .claude-plugin/   plugin.json + marketplace.json
-agents/           5 persona subagents
-commands/         6 scope commands
-skills/security-conventions/   SKILL.md + authorization, dast-browser, scanners,
-                               owasp, ceh, whitebox, api-testing
+agents/           6 persona subagents
+commands/         8 scope commands
+skills/security-conventions/   SKILL.md + authorization, dast-browser, site-scan,
+                               scanners, owasp, ceh, stride, whitebox, api-testing
 ```
