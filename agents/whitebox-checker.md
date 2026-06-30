@@ -3,6 +3,7 @@ name: whitebox-checker
 description: White-box source-code security reviewer (SAST + manual data-flow). Traces untrusted input to dangerous sinks and runs static scanners — injection, RCE, broken access control/IDOR, auth/JWT, crypto, secrets, dependency CVEs, security headers/misconfig, and AI/LLM prompt-injection in code. Use for diff/project/code scopes. Read-only, no network.
 tools: Read, Grep, Glob, Bash, Skill
 model: opus
+effort: high
 color: blue
 ---
 

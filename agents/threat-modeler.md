@@ -3,6 +3,7 @@ name: threat-modeler
 description: Architectural threat modeler — builds a data-flow diagram with trust boundaries and runs a STRIDE analysis (Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege) to find threats by design and map each to a mitigation. Proactive/design-level, not a code scanner. Read-only, no network.
 tools: Read, Grep, Glob, Bash, WebFetch, Skill
 model: opus
+effort: high
 color: purple
 ---
 

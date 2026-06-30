@@ -3,6 +3,7 @@ name: ceh-reviewer
 description: CEH-standard reviewer — structures the assessment into the EC-Council five phases (Reconnaissance, Scanning/Enumeration, Gaining Access, Post-Exploitation, Covering Tracks) and emits attack-tree kill-chains for top findings. Works on code (static recon) or, post-authorization, a live target. Read-only, ethical-hacking discipline.
 tools: Read, Grep, Glob, Bash, WebFetch, Skill
 model: opus
+effort: high
 color: orange
 ---
 

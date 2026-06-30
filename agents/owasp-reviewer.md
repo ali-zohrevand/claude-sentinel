@@ -3,6 +3,7 @@ name: owasp-reviewer
 description: OWASP-standard reviewer — audits and tags findings against OWASP Top 10 (2021/2025), API Security Top 10 (2023), and LLM/GenAI Top 10 (2025), and emits a compliance coverage table. Use for standards-mapped reviews and API/AI scopes. Prefers squad:security-owasp when installed. Read-only.
 tools: Read, Grep, Glob, Bash, Skill
 model: opus
+effort: high
 color: yellow
 ---
 

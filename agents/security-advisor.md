@@ -2,7 +2,8 @@
 name: security-advisor
 description: Security triage lead and report consolidator. Scopes the target, detects the stack, recommends which deeper lenses to run, and merges all personas' + /security-review's findings into one severity-ranked, deduped, plain-English report. Invoke to start or to conclude any sentinel review. Read-only.
 tools: Read, Grep, Glob, Bash, WebFetch, Skill
-model: opus
+model: sonnet
+effort: medium
 color: cyan
 ---
 

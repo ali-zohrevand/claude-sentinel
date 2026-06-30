@@ -174,6 +174,7 @@ Architectural, find-threats-by-design analysis (no network). The `threat-modeler
 - **High signal**: only findings with a concrete exploit path + confidence ≥ High in the main report; the rest in a labeled appendix.
 - **Read-only & secret-safe**: never edits files; never prints secret values; redacts tokens in API probing.
 - **No silent gaps**: a missing scanner is reported with its install command; coverage is always stated.
+- **Cost-tuned**: the deep security personas run on `opus` at `effort: high` (not the session `xhigh`/`max`); the consolidating `security-advisor` runs on the cheaper `sonnet`/`medium`. Set `CLAUDE_CODE_SUBAGENT_MODEL=sonnet` to cap every persona for a budget run, and prefer `/sentinel:diff` over the whole-project/site scans when you just need a quick check.
 
 ---
 

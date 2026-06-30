@@ -3,6 +3,7 @@ name: blackbox-dast
 description: Black-box dynamic security tester — drives a real browser (Playwright MCP) to crawl and actively attack a RUNNING target like an AI-powered DAST scanner (Acunetix-style), plus CLI DAST tools. Use for the url scope and live api/apis probing. MUST pass the authorization gate before any active probe. Read-only on the filesystem.
 disallowedTools: Edit, Write, NotebookEdit
 model: opus
+effort: high
 color: red
 ---
 
